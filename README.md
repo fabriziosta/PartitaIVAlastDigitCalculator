@@ -9,16 +9,23 @@ Come è composta una partita IVA?
 3) 11A cifra codice di controllo calcolato cosi:
 	
 	L'algoritmo impiegato per calcolare la cifra di controllo è la Formula di Luhn:
+	
 	Sia X la somma delle prime cinque cifre in posizione DISPARI
+	
 	Sia Y la somma dei doppi delle cinque cifre in posizione pari, sottraendo 9 se il doppio della cifra è superiore a 9
+	
 	Sia T=(X+Y) mod 10 l'unità corrispondente alla somma dei numeri sopra calcolati
+	
 	Allora la cifra di controllo C = (10-T) mod 10
 	
 Quindi se partita iva è 1234567 048 C?
 
 X = 1 + 3 + 5 + 7 + 4 = 20
+
 Y = 2*2 + 4*2 + ((6*2)-9) + 0*2 + ((8*2)-9) = 4 + 8 + 5 + 0 + 7 = 24
+
 T = (20 + 24) mod 10 = 4
+
 C = (10 - 4) mod 10 = 6
 
 
