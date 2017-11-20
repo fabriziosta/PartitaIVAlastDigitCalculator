@@ -3,7 +3,7 @@ print("Partita IVA last digit calculator v1.0")
 continua = True
 
 while continua:
-	partitaIVA = input("Digita le prime 10 cifre della partita IVA: ")
+	partitaIVA = input("\nDigita le prime 10 cifre della partita IVA: ")
 	
 	if(partitaIVA == "esci"):
 		print("Programma terminato.")
@@ -13,7 +13,7 @@ while continua:
 			partitaIVAnumerica = int(partitaIVA) #controllo se sono 10 numeri
 		except:
 			print("Inserire una partita IVA numerica!")
-			print("Se vuoi interrompere il programma scrivi \"esci\"")
+			print("(Per uscire scrivi \"esci\")")
 			continue
 		
 		#splitto tutto in una lista per poter lavorarci.
@@ -27,8 +27,7 @@ while continua:
 		Y = (partitaIVAsplittata[1]*2-9 if partitaIVAsplittata[1]*2 > 9 else partitaIVAsplittata[1]*2) + (partitaIVAsplittata[3]*2-9 if partitaIVAsplittata[3]*2 > 9 else partitaIVAsplittata[3]*2) + (partitaIVAsplittata[5]*2-9 if partitaIVAsplittata[5]*2 > 9 else partitaIVAsplittata[5]*2) + (partitaIVAsplittata[7]*2-9 if partitaIVAsplittata[7]*2 > 9 else partitaIVAsplittata[7]*2) + (partitaIVAsplittata[9]*2-9 if partitaIVAsplittata[9]*2 > 9 else partitaIVAsplittata[9]*2)
 		T = (X + Y) % 10
 		C = (10 - T) % 10
-		print("L'ultima cifra è: ", C)
-		print("Se vuoi interrompere il programma scrivi \"esci\"")
-		print(X,Y,T,C)
+		print("\nL'undicesima cifra è: ", C)
+		print("(Per uscire scrivi \"esci\")")
 	else:
 		print("Inserire 10 cifre!")
