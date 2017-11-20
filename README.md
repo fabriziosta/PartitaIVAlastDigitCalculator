@@ -1,4 +1,4 @@
-# PartitaIVAlastDigitCalculator
+# Partita IVA last digit calculator
 Calcola in automatico l'ultima cifra della partita IVA italiana
 
 Per eseguire lo script basta avere un'installazione di python di qualsiasi tipo, digitare le prime 10 cifre della partita IVA italiana e premere invio.
