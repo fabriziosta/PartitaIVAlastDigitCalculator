@@ -22,11 +22,11 @@ Quindi se partita iva è 1234567 048 C?
 
 X = 1 + 3 + 5 + 7 + 4 = 20
 
-Y = 2*2 + 4*2 + ((6*2)-9) + 0*2 + ((8*2)-9) = 4 + 8 + 5 + 0 + 7 = 24
+Y = 2x2 + 4x2 + ((6x2)-9) + 0x2 + ((8x2)-9) = 4 + 8 + 3 + 0 + 7 = 22
 
-T = (20 + 24) mod 10 = 4
+T = (20 + 22) mod 10 = 2
 
-C = (10 - 4) mod 10 = 6
+C = (10 - 2) mod 10 = 8
 
 
 #Questo script è stato creato al fine di testing
